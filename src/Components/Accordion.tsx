@@ -17,7 +17,7 @@ const Accordion: React.FC<AccordionProps> = ({ show, onClick, content, title, ac
                 <img src={show ? minus : plus} alt="" className="w-5 h-5" />
             </div>
             <div id="accordion-container" className={`cursor-default`}>
-                <p className={`mt-3 text-grayish-purple text-sm`}>{content}</p>
+                <p className={`mt-3 text-grayish-purple text-sm px-3`}>{content}</p>
             </div>
         </div>
     );
