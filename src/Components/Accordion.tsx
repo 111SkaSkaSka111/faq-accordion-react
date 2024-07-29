@@ -13,7 +13,7 @@ const Accordion: React.FC<AccordionProps> = ({ show, onClick, content, title, ac
     return (
         <div id={accId} onClick={onClick} className={`${show ? "open" : ""} border-b-2 group border-light-pink py-3 h-fit cursor-pointer`}>
             <div className="flex items-center justify-between gap-5">
-                <p className="font-semibold text-dark-purple">{title}</p>
+                <p className="font-semibold text-dark-purple hover:text-purple-700">{title}</p>
                 <img src={show ? minus : plus} alt="" className="w-5 h-5" />
             </div>
             <div id="accordion-container" className={`cursor-default`}>
