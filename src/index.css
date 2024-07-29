@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#accordion-container {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.5s ease-in-out;
+}
+
+#accordion-container > p {
+    overflow: hidden;
+}
+
+#accordion-one.open > #accordion-container,
+#accordion-two.open > #accordion-container,
+#accordion-three.open > #accordion-container,
+#accordion-four.open > #accordion-container {
+    grid-template-rows: 1fr;
+}
